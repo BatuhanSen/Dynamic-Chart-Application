@@ -10,9 +10,7 @@ Esnek Veri Seçimi: Kullanýcýlar, birden fazla kolonu seçerek iki boyutlu grafikl
 Teknolojiler
 Backend: ASP.NET Core, C#
 Frontend: HTML, CSS, JavaScript, jQuery, Chart.js, Bootstrap
-Veritabaný: PostgreSQL Kurulum
-Proje kaynak kodunu bilgisayarýnýza klonlamak için aþaðýdaki komutu kullanabilirsiniz:
-
+Veritabaný: PostgreSQL 
 
 Gereksinimler
 .NET Core SDK (3.1 veya üzeri)
