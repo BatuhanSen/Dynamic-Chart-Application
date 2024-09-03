@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Table and Generate Chart</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Select Table and Generate Chart</h2>
+        <div id="tableSelection">
+            <label for="tableSelect">Select a Table</label>
+            <select id="tableSelect" class="form-control"></select>
+        </div>
+
+        <div id="columnSelectionX" class="mt-4">
+            <label for="columnSelectX">Select Column for X-Axis</label>
+            <select id="columnSelectX" class="form-control"></select>
+        </div>
+
+        <div id="columnSelectionY" class="mt-4">
+            <label for="columnSelectY">Select Column for Y-Axis</label>
+            <select id="columnSelectY" class="form-control"></select>
+        </div>
+
+        <div id="chartSelection" class="mt-4">
+            <label for="chartType">Select a Chart Type</label>
+            <select id="chartType" class="form-control">
+                <option value="line">Line Chart</option>
+                <option value="bar">Bar Chart</option>
+                <option value="radar">Radar Chart</option>
+            </select>
+        </div>
+
+        <div class="mt-4">
+            <canvas id="myChart"></canvas>
+        </div>
+
+        <button id="generateChart" class="btn btn-primary mt-4">Generate Chart</button>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            const dbInfo = JSON.parse(localStorage.getItem("dbInfo"));
+
+            $.ajax({
+                url: 'https://localhost:7234/api/db/get-tables',
+                type: 'POST',
+                data: JSON.stringify(dbInfo),
+                contentType: 'application/json',
+                success: function (tables) {
+                    tables.forEach(function (table) {
+                        $('#tableSelect').append(new Option(table, table));
+                    });
+                },
+                error: function (error) {
+                    alert('Failed to load tables: ' + error.responseText);
+                }
+            });
+
+            $('#tableSelect').on('change', function () {
+                const selectedTable = $(this).val();
+                $.ajax({
+                    url: `https://localhost:7234/api/db/get-columns?tableName=${selectedTable}`,
+                    type: 'POST',
+                    data: JSON.stringify(dbInfo),
+                    contentType: 'application/json',
+                    success: function (columns) {
+                        $('#columnSelectX').empty();
+                        $('#columnSelectY').empty();
+                        columns.forEach(function (column) {
+                            $('#columnSelectX').append(new Option(column, column));
+                            $('#columnSelectY').append(new Option(column, column));
+                        });
+                    },
+                    error: function (error) {
+                        alert('Failed to load columns: ' + error.responseText);
+                    }
+                });
+            });
+            
+            $('#generateChart').on('click', function () {
+                const selectedTable = $('#tableSelect').val();
+                const selectedColumnX = $('#columnSelectX').val();
+                const selectedColumnY = $('#columnSelectY').val();
+                const chartType = $('#chartType').val();
+                
+                const dbInfo = JSON.parse(localStorage.getItem("dbInfo"));
+                
+                // localStorage'dan alınan veriler
+                if (!dbInfo || !dbInfo.DbType || !dbInfo.Password || !dbInfo.Username || !dbInfo.DatabaseName || !dbInfo.ServerAddress) {
+                    alert('Database connection information is missing. Please go back and fill in the required fields.');
+                    //return;
+                }
+                
+                // DBQueryInfo nesnesi
+                const dbQueryInfo = {
+                    DbType: dbInfo.dbType,
+                    Password: dbInfo.password,
+                    Username: dbInfo.username,
+                    DatabaseName: dbInfo.databaseName,
+                    ServerAddress: dbInfo.serverAddress,
+                    SelectedTable: selectedTable,
+                    SelectedColumnX: selectedColumnX,
+                    SelectedColumnY: selectedColumnY
+                };
+
+
+                $.ajax({
+                    url: 'https://localhost:7234/api/db/get-data',
+                    type: 'POST',
+                    data: JSON.stringify(dbQueryInfo),
+                    contentType: 'application/json',
+                    success: function (data) {
+                        createChart(data, chartType);
+                    },
+                    error: function (error) {
+                        alert('Failed to load data: ' + error.responseText);
+                    }
+                });
+            });
+
+
+
+            function createChart(data, chartType) {
+                const ctx = document.getElementById('myChart').getContext('2d');
+                new Chart(ctx, {
+                    type: chartType,
+                    data: {
+                        labels: data.labels,
+                        datasets: [{
+                            label: 'Data',
+                            data: data.values,
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+[
+  {
+    "ContainingType": "BackAPI.Controllers.DBController",
+    "Method": "Connect",
+    "RelativePath": "api/DB/connect",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dbInfo",
+        "Type": "BackAPI.Models.DBInfo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BackAPI.Controllers.DBController",
+    "Method": "GetColumns",
+    "RelativePath": "api/DB/get-columns",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dbInfo",
+        "Type": "BackAPI.Models.DBInfo",
+        "IsRequired": true
+      },
+      {
+        "Name": "tableName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BackAPI.Controllers.DBController",
+    "Method": "GetData",
+    "RelativePath": "api/DB/get-data",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "queryInfo",
+        "Type": "BackAPI.Models.DBQueryInfo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BackAPI.Controllers.DBController",
+    "Method": "GetTables",
+    "RelativePath": "api/DB/get-tables",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dbInfo",
+        "Type": "BackAPI.Models.DBInfo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

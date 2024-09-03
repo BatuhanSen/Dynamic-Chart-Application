@@ -1,0 +1,59 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Batuhan\\source\\repos\\FrontApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EFD4F49B-1937-4EF0-AB28-A753D33875B6}|\u00C7\u00F6z\u00FCm \u00D6\u011Feleri{EFD4F49B-1937-4EF0-AB28-A753D33875B6}|C:\\Users\\Batuhan\\source\\repos\\FrontApp\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EFD4F49B-1937-4EF0-AB28-A753D33875B6}|\u00C7\u00F6z\u00FCm \u00D6\u011Feleri{EFD4F49B-1937-4EF0-AB28-A753D33875B6}|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFD4F49B-1937-4EF0-AB28-A753D33875B6}|\u00C7\u00F6z\u00FCm \u00D6\u011Feleri{EFD4F49B-1937-4EF0-AB28-A753D33875B6}|C:\\Users\\Batuhan\\source\\repos\\FrontApp\\charts.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EFD4F49B-1937-4EF0-AB28-A753D33875B6}|\u00C7\u00F6z\u00FCm \u00D6\u011Feleri{EFD4F49B-1937-4EF0-AB28-A753D33875B6}|solutionrelative:charts.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "charts.html",
+              "DocumentMoniker": "C:\\Users\\Batuhan\\source\\repos\\FrontApp\\charts.html",
+              "RelativeDocumentMoniker": "charts.html",
+              "ToolTip": "C:\\Users\\Batuhan\\source\\repos\\FrontApp\\charts.html",
+              "RelativeToolTip": "charts.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-09-03T03:28:09.683Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\Batuhan\\source\\repos\\FrontApp\\index.html",
+              "RelativeDocumentMoniker": "index.html",
+              "ToolTip": "C:\\Users\\Batuhan\\source\\repos\\FrontApp\\index.html",
+              "RelativeToolTip": "index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-09-03T02:59:34.054Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

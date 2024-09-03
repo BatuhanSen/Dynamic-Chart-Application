@@ -1,0 +1,177 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Batuhan\\source\\repos\\BackAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7BAAB1A2-2DE2-4E54-8350-91236670E9CD}|BackAPI\\BackAPI.csproj|c:\\users\\batuhan\\source\\repos\\backapi\\backapi\\controllers\\dbcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BAAB1A2-2DE2-4E54-8350-91236670E9CD}|BackAPI\\BackAPI.csproj|solutionrelative:backapi\\controllers\\dbcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BAAB1A2-2DE2-4E54-8350-91236670E9CD}|BackAPI\\BackAPI.csproj|c:\\users\\batuhan\\source\\repos\\backapi\\backapi\\services\\dbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BAAB1A2-2DE2-4E54-8350-91236670E9CD}|BackAPI\\BackAPI.csproj|solutionrelative:backapi\\services\\dbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BAAB1A2-2DE2-4E54-8350-91236670E9CD}|BackAPI\\BackAPI.csproj|c:\\users\\batuhan\\source\\repos\\backapi\\backapi\\models\\dbqueryinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BAAB1A2-2DE2-4E54-8350-91236670E9CD}|BackAPI\\BackAPI.csproj|solutionrelative:backapi\\models\\dbqueryinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BAAB1A2-2DE2-4E54-8350-91236670E9CD}|BackAPI\\BackAPI.csproj|c:\\users\\batuhan\\source\\repos\\backapi\\backapi\\models\\dbinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BAAB1A2-2DE2-4E54-8350-91236670E9CD}|BackAPI\\BackAPI.csproj|solutionrelative:backapi\\models\\dbinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BAAB1A2-2DE2-4E54-8350-91236670E9CD}|BackAPI\\BackAPI.csproj|c:\\users\\batuhan\\source\\repos\\backapi\\backapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BAAB1A2-2DE2-4E54-8350-91236670E9CD}|BackAPI\\BackAPI.csproj|solutionrelative:backapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BAAB1A2-2DE2-4E54-8350-91236670E9CD}|BackAPI\\BackAPI.csproj|c:\\users\\batuhan\\source\\repos\\backapi\\backapi\\backapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7BAAB1A2-2DE2-4E54-8350-91236670E9CD}|BackAPI\\BackAPI.csproj|solutionrelative:backapi\\backapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BAAB1A2-2DE2-4E54-8350-91236670E9CD}|BackAPI\\BackAPI.csproj|c:\\users\\batuhan\\source\\repos\\backapi\\backapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7BAAB1A2-2DE2-4E54-8350-91236670E9CD}|BackAPI\\BackAPI.csproj|solutionrelative:backapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BAAB1A2-2DE2-4E54-8350-91236670E9CD}|BackAPI\\BackAPI.csproj|c:\\users\\batuhan\\source\\repos\\backapi\\backapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7BAAB1A2-2DE2-4E54-8350-91236670E9CD}|BackAPI\\BackAPI.csproj|solutionrelative:backapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BAAB1A2-2DE2-4E54-8350-91236670E9CD}|BackAPI\\BackAPI.csproj|c:\\users\\batuhan\\source\\repos\\backapi\\backapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7BAAB1A2-2DE2-4E54-8350-91236670E9CD}|BackAPI\\BackAPI.csproj|solutionrelative:backapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DBQueryInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Batuhan\\source\\repos\\BackAPI\\BackAPI\\Models\\DBQueryInfo.cs",
+              "RelativeDocumentMoniker": "BackAPI\\Models\\DBQueryInfo.cs",
+              "ToolTip": "C:\\Users\\Batuhan\\source\\repos\\BackAPI\\BackAPI\\Models\\DBQueryInfo.cs",
+              "RelativeToolTip": "BackAPI\\Models\\DBQueryInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T03:03:34.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Batuhan\\source\\repos\\BackAPI\\BackAPI\\Program.cs",
+              "RelativeDocumentMoniker": "BackAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\Batuhan\\source\\repos\\BackAPI\\BackAPI\\Program.cs",
+              "RelativeToolTip": "BackAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T20:17:32.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BackAPI.csproj",
+              "DocumentMoniker": "C:\\Users\\Batuhan\\source\\repos\\BackAPI\\BackAPI\\BackAPI.csproj",
+              "RelativeDocumentMoniker": "BackAPI\\BackAPI.csproj",
+              "ToolTip": "C:\\Users\\Batuhan\\source\\repos\\BackAPI\\BackAPI\\BackAPI.csproj",
+              "RelativeToolTip": "BackAPI\\BackAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-01T19:35:58.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Batuhan\\source\\repos\\BackAPI\\BackAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "BackAPI\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Batuhan\\source\\repos\\BackAPI\\BackAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "BackAPI\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-01T18:45:07.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DBInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Batuhan\\source\\repos\\BackAPI\\BackAPI\\Models\\DBInfo.cs",
+              "RelativeDocumentMoniker": "BackAPI\\Models\\DBInfo.cs",
+              "ToolTip": "C:\\Users\\Batuhan\\source\\repos\\BackAPI\\BackAPI\\Models\\DBInfo.cs",
+              "RelativeToolTip": "BackAPI\\Models\\DBInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T13:31:37.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DBService.cs",
+              "DocumentMoniker": "C:\\Users\\Batuhan\\source\\repos\\BackAPI\\BackAPI\\Services\\DBService.cs",
+              "RelativeDocumentMoniker": "BackAPI\\Services\\DBService.cs",
+              "ToolTip": "C:\\Users\\Batuhan\\source\\repos\\BackAPI\\BackAPI\\Services\\DBService.cs",
+              "RelativeToolTip": "BackAPI\\Services\\DBService.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAiwEsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T13:31:29.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DBController.cs",
+              "DocumentMoniker": "C:\\Users\\Batuhan\\source\\repos\\BackAPI\\BackAPI\\Controllers\\DBController.cs",
+              "RelativeDocumentMoniker": "BackAPI\\Controllers\\DBController.cs",
+              "ToolTip": "C:\\Users\\Batuhan\\source\\repos\\BackAPI\\BackAPI\\Controllers\\DBController.cs",
+              "RelativeToolTip": "BackAPI\\Controllers\\DBController.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAUwFwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T13:31:40.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Batuhan\\source\\repos\\BackAPI\\BackAPI\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "BackAPI\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Batuhan\\source\\repos\\BackAPI\\BackAPI\\appsettings.Development.json",
+              "RelativeToolTip": "BackAPI\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-02T11:07:11.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Batuhan\\source\\repos\\BackAPI\\BackAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "BackAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\Batuhan\\source\\repos\\BackAPI\\BackAPI\\appsettings.json",
+              "RelativeToolTip": "BackAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-02T11:07:15.853Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+-- Veritabaný oluþtur
+CREATE DATABASE testdb;
+
+-- testdb veritabanýna baðlan
+\c testdb;
+
+-- customers tablosunu oluþtur
+CREATE TABLE customers (
+    customer_id SERIAL PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    email VARCHAR(100),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- orders tablosunu oluþtur
+CREATE TABLE orders (
+    order_id SERIAL PRIMARY KEY,
+    customer_id INT REFERENCES customers(customer_id),
+    order_date DATE,
+    amount DECIMAL(10, 2)
+);
+
+-- products tablosunu oluþtur
+CREATE TABLE products (
+    product_id SERIAL PRIMARY KEY,
+    product_name VARCHAR(100),
+    price DECIMAL(10, 2)
+);
+
+-- order_items tablosunu oluþtur (orders ve products arasýnda baðlantý saðlayan)
+CREATE TABLE order_items (
+    order_item_id SERIAL PRIMARY KEY,
+    order_id INT REFERENCES orders(order_id),
+    product_id INT REFERENCES products(product_id),
+    quantity INT,
+    total_price DECIMAL(10, 2)
+);
+
+-- customers tablosuna örnek veriler ekle
+INSERT INTO customers (first_name, last_name, email) VALUES
+('John', 'Doe', 'john.doe@example.com'),
+('Jane', 'Smith', 'jane.smith@example.com'),
+('Alice', 'Johnson', 'alice.johnson@example.com'),
+('Bob', 'Brown', 'bob.brown@example.com'),
+('Charlie', 'Davis', 'charlie.davis@example.com');
+
+-- products tablosuna örnek veriler ekle
+INSERT INTO products (product_name, price) VALUES
+('Laptop', 1000.00),
+('Smartphone', 500.00),
+('Tablet', 300.00),
+('Monitor', 150.00),
+('Keyboard', 50.00);
+
+-- orders tablosuna örnek veriler ekle
+INSERT INTO orders (customer_id, order_date, amount) VALUES
+(1, '2024-09-01', 1000.00),
+(2, '2024-09-02', 500.00),
+(3, '2024-09-03', 450.00),
+(4, '2024-09-04', 150.00),
+(5, '2024-09-05', 500.00);
+
+-- order_items tablosuna örnek veriler ekle
+INSERT INTO order_items (order_id, product_id, quantity, total_price) VALUES
+(1, 1, 1, 1000.00), -- John Doe, Laptop
+(2, 2, 1, 500.00),  -- Jane Smith, Smartphone
+(3, 2, 1, 500.00),  -- Alice Johnson, Smartphone
+(3, 3, 1, 300.00),  -- Alice Johnson, Tablet
+(4, 4, 1, 150.00),  -- Bob Brown, Monitor
+(5, 5, 10, 500.00); -- Charlie Davis, 10 Keyboard
